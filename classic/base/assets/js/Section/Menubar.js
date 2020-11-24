@@ -182,7 +182,7 @@
 
             case 'md':
             case 'sm':
-              _this.type = 'unfold';
+              _this.type = 'fold';
               break;
 
             case 'xs':
@@ -285,7 +285,7 @@
         var _this2 = this;
 
         var callback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function () {};
-        $BODY.addClass('site-menubar-changing');
+        $BODY.addClass('site-menubar-fold');
         doing.call(this);
         this.$el.trigger('changing.site.menubar');
         var menuApi = this.getMenuApi();
