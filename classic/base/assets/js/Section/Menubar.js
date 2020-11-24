@@ -182,7 +182,7 @@
 
             case 'md':
             case 'sm':
-              _this.type = 'hide';
+              _this.type = 'unfold';
               break;
 
             case 'xs':
@@ -308,28 +308,6 @@
       value: function reset() {
         $BODY.removeClass('site-menubar-hide site-menubar-open site-menubar-fold site-menubar-unfold');
         $HTML.removeClass('disable-scrolling');
-      }
-    }, {
-      key: "open",
-      value: function open() {
-        this.animate(function () {
-          $BODY.addClass('site-menubar-open site-menubar-unfold');
-          $HTML.addClass('disable-scrolling');
-        }, function () {
-          this.scrollable.enable();
-        });
-        this.type = 'open';
-      }
-    }, {
-      key: "hide",
-      value: function hide() {
-        this.hoverscroll.disable();
-        this.animate(function () {
-          $BODY.addClass('site-menubar-hide site-menubar-unfold');
-        }, function () {
-          this.scrollable.enable();
-        });
-        this.type = 'hide';
       }
     }, {
       key: "unfold",
