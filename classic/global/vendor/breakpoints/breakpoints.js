@@ -111,14 +111,14 @@
     },
     // Small devices (tablets)
     sm: {
-      min: 0,
+      min: 768,
       max: 991
     },
     // Medium devices (desktops)
     md: {
       min: 992,
       max: Infinity
-    }
+    },
     // Large devices (large desktops)
    /*  lg: {
       min: 1200,

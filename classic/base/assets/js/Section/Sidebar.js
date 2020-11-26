@@ -9,7 +9,7 @@
     };
     factory(mod.exports, global.jQuery, global.Base, global.Plugin);
     global.SectionSidebar = mod.exports;
-  }
+  } 
 })(this, function (_exports, _jquery, _Base2, _Plugin) {
   "use strict";
 

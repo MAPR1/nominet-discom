@@ -285,7 +285,7 @@
         var _this2 = this;
 
         var callback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function () {};
-        $BODY.addClass('site-menubar-fold');
+        $BODY.addClass('site-menubar-changing');
         doing.call(this);
         this.$el.trigger('changing.site.menubar');
         var menuApi = this.getMenuApi();
@@ -308,6 +308,28 @@
       value: function reset() {
         $BODY.removeClass('site-menubar-hide site-menubar-open site-menubar-fold site-menubar-unfold');
         $HTML.removeClass('disable-scrolling');
+      }
+    }, {
+      key: "open",
+      value: function open() {
+        this.animate(function () {
+          $BODY.addClass('site-menubar-open site-menubar-fold');
+          $HTML.addClass('disable-scrolling');
+        }, function () {
+          this.scrollable.enable();
+        });
+        this.type = 'open';
+      }
+    }, {
+      key: "hide",
+      value: function hide() {
+        this.hoverscroll.disable();
+        this.animate(function () {
+          $BODY.addClass('site-menubar-hide site-menubar-unfold');
+        }, function () {
+          this.scrollable.enable();
+        });
+        this.type = 'hide';
       }
     }, {
       key: "unfold",
