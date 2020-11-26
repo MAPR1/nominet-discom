@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body, h1,h2,h3,h4,h4,p{
+  /* font-family: "Overpass", sans-serif; */
+  font-family: "Montserrat", sans-serif !important;
+}
 .site-navbar {
   background-color: #005aea;
 }
@@ -20,7 +24,8 @@
   background-color: #fff;
 }
 .site-navbar .navbar-header .navbar-brand {
-  font-family: Roboto, sans-serif;
+  /* font-family: "Overpass", sans-serif; */
+  font-family: "Montserrat", sans-serif !important;
   color: #fff;
   cursor: pointer;
 }
@@ -62,7 +67,8 @@ body {
   z-index: 1400;
   height: 100%;
   height: calc(100% - 66.01px);
-  font-family: Roboto, sans-serif;
+  /* font-family: "Overpass", sans-serif; */
+  font-family: "Montserrat", sans-serif !important;
   color: rgba(163, 175, 183, 0.9);
   background: #263238;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
@@ -117,13 +123,13 @@ body {
   height: 76px;
   padding: 26px 0;
   font-size: 16px;
-  color: #76838f;
+  color: #ffffff;
   text-align: center;
-  background-color: #21292e;
+  background-color: #005aea;
 }
 .site-menubar-footer > a:focus,
 .site-menubar-footer > a:hover {
-  background-color: #1e2427;
+  background-color: #005aea !important;
 }
 .site-menubar-light .site-menubar-footer > a {
   background-color: #e4eaec;
@@ -1261,11 +1267,12 @@ body.site-gridmenu-active {
 .site-menubar-fold .site-menu > .site-menu-item > a {
     height: 90px;
     line-height: 85px;
+    padding-left:8px;
 }
 .site-menubar-fold .site-menu > .site-menu-item > a .site-menu-icon,
 .site-menubar-fold .site-menu > .site-menu-item > a .site-menu-title {
   position: absolute;
-  top: 0;
+  top: 20px!important;
   left: 0;
   width: 90px;
   text-align: center;
@@ -1278,10 +1285,11 @@ body.site-gridmenu-active {
 .site-menubar-fold .site-menu > .site-menu-item > a .site-menu-title {
   visibility: visible;
   opacity: 1;
+  font-size: 10px;
 }
 .site-menubar-fold .site-menu > .site-menu-item > a .site-menu-icon {
   margin-right: 0;
-  font-size: 18px;
+  font-size: 20px;
   visibility: visible;
   opacity: 1;
 }
@@ -1357,7 +1365,7 @@ body.site-gridmenu-active {
   visibility: hidden;
   background: #242f35;
   opacity: 0;
-  transition: visibility 0.25s, opacity 0.25s;
+  transition: visibility 0.5s, opacity 0.5s;
 }
 .site-menubar-fold .site-menu > .site-menu-item > .site-menu-sub-up {
   top: auto;
@@ -1369,7 +1377,7 @@ body.site-gridmenu-active {
   > .site-menu-sub
   .site-menu-item
   > a {
-  padding: 0 30px;
+  padding: 0 0 10px 15px;
 }
 .site-menubar-fold
   .site-menu
@@ -1391,7 +1399,7 @@ body.site-gridmenu-active {
   > .site-menu-item
   > .site-menu-sub {
   background: #fff;
-  border: 1px solid #f7f7f7;
+  border: 1px solid transparent;
 }
 .site-menubar-fold .site-menubar {
   width: 90px;
@@ -1617,7 +1625,7 @@ body.site-gridmenu-active {
     > .site-menu-item
     > .site-menu-sub {
     background: #fff;
-    border: 1px solid #f7f7f7;
+    border: 1px solid transparent;
   }
   .css-menubar .site-menubar {
     width: 90px;
@@ -10429,21 +10437,25 @@ h3.example-title {
 .site-menu-item.has-sub{
     background-color: #005aea !important;
 }
-.site-menu-item.has-sub.hover{
-    background-color: #ffffff !important;
+.site-menu-item.has-sub.hover .nav-op-c{
+  background: white;
+  height: 90px;
+  min-width: 80px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: 0.5s;
 }
 
-li.site-menu-item.has-sub:hover + li.site-menu-item.has-sub {
+li.site-menu-item.has-sub.hover + li.site-menu-item.has-sub {
     border-top-right-radius: 20px; 
-    background-color: red;
 }
 
 .site-menu-item.has-sub.hover a.nav-option ~ a.nav-option{
-   
+   transition: .5s;
     border-top-left-radius: 20px;
 }
 .site-menu-item.has-sub.hover .icon-nav, .site-menu-item.has-sub.hover .nav-t{
-    color: #97bbf6 !important;
+    color: #206eed !important;
 }
 .site-menu-icon{
     top:-10px !important;
@@ -10465,13 +10477,18 @@ li.site-menu-item.has-sub:hover + li.site-menu-item.has-sub {
 
 .site-menu-sub.menu-two{
 background-color: white !important;
--webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.45);
--moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.45);
-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.45);
 }
 .site-menu-sub.menu-two .site-menu-item.menu-two a{
 color:#1b6bec;
 }
- .site-menu-item.menu-two.hover {
+ .site-menu-item.menu-two.hover .nav-subop-c {
 background-color:#e5eefd !important;
+}
+
+.nav-subop-c{
+  padding-left: 10px;
+   
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: .5s;
 }

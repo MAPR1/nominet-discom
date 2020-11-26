@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="../../../global/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../global/css/bootstrap-extend.min.css">
   <link rel="stylesheet" href="../../assets/css/site.min.css">
+  <script src="https://unpkg.com/feather-icons"></script>
 
   <!-- Plugins -->
   <link rel="stylesheet" href="../../../global/vendor/animsition/animsition.css">
@@ -30,12 +31,11 @@
   <link rel="stylesheet" href="../../../global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
   <link rel="stylesheet" href="../../assets/examples/css/dashboard/analytics.css">
 
-
   <!-- Fonts -->
   <link rel="stylesheet" href="../../../global/fonts/web-icons/web-icons.min.css">
   <link rel="stylesheet" href="../../../global/fonts/brand-icons/brand-icons.min.css">
-  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <!--[if lt IE 9]>
     <script src="../../../global/vendor/html5shiv/html5shiv.min.js"></script>
     <![endif]-->
@@ -513,299 +513,229 @@
 
             <li class="site-menu-item has-sub ">
               <a class="nav-option" href="javascript:void(0)">
-                <i class="site-menu-icon icon-nav wb-layout" aria-hidden="true"></i>
-                <span class="site-menu-title nav-t">Layouts</span>
-                <span class="site-menu-arrow"></span>
+               <div class="nav-op-c">
+                <i data-feather="grid" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                <span class="site-menu-title nav-t">Catálogos</span>
+               </div>
               </a>
-              <div class="position-absolute"></div>
               <ul class="site-menu-sub menu-two">
                 <li class="site-menu-item menu-two">
-                  <a class="animsition-link" href="../layouts/menu-collapsed.html">
-                    <span class="site-menu-title">Menu Collapsed</span>
+                  <a class="animsition-link" href="#">
+                    <div class="nav-subop-c">
+                      <i data-feather="arrow-right" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                      <span class="site-menu-title">Opción</span>
+                    </div>
+                  
                   </a>
                 </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../layouts/menu-collapsed-alt.html">
-                    <span class="site-menu-title">Menu Collapsed Alt</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../layouts/menu-expended.html">
-                    <span class="site-menu-title">Menu Expended</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../layouts/grids.html">
-                    <span class="site-menu-title">Grid Scaffolding</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../layouts/bordered-header.html">
-                    <span class="site-menu-title">Bordered Header</span>
+                <li class="site-menu-item menu-two">
+                  <a class="animsition-link" href="#">
+                    <div class="nav-subop-c">
+                      <i data-feather="arrow-right" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                      <span class="site-menu-title">Opción</span>
+                    </div>
+                  
                   </a>
                 </li>
               </ul>
             </li>
+
             <li class="site-menu-item has-sub">
               <a class="nav-option" href="javascript:void(0)">
-                <i class="site-menu-icon icon-nav wb-file" aria-hidden="true"></i>
-                <span class="site-menu-title nav-t">Pages</span>
-                <span class="site-menu-arrow"></span>
+               <div class="nav-op-c">
+                <i data-feather="edit" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                <span class="site-menu-title nav-t">Operaciones</span>
+               </div>
               </a>
               <ul class="site-menu-sub menu-two">
-                
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../pages/faq.html">
-                    <span class="site-menu-title">FAQ</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../pages/gallery.html">
-                    <span class="site-menu-title">Gallery</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../pages/gallery-grid.html">
-                    <span class="site-menu-title">Gallery Grid</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../pages/search-result.html">
-                    <span class="site-menu-title">Search Result</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="site-menu-item has-sub">
-              <a class="nav-option" href="javascript:void(0)">
-                <i class="site-menu-icon icon-nav wb-bookmark" aria-hidden="true"></i>
-                <span class="site-menu-title nav-t">Basic UI</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub  menu-two">
-               
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../uikit/buttons.html">
-                    <span class="site-menu-title">Buttons</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../uikit/cards.html">
-                    <span class="site-menu-title">Cards</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../uikit/dropdowns.html">
-                    <span class="site-menu-title">Dropdowns</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../uikit/icons.html">
-                    <span class="site-menu-title">Icons</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../uikit/list.html">
-                    <span class="site-menu-title">List</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../uikit/tooltip-popover.html">
-                    <span class="site-menu-title">Tooltip &amp; Popover</span>
-                  </a>
-                </li>
-              
-              </ul>
-            </li>
-            <li class="site-menu-item has-sub">
-              <a class="nav-option" href="javascript:void(0)">
-                <i class="site-menu-icon icon-nav wb-hammer" aria-hidden="true"></i>
-                <span class="site-menu-title nav-t">Advanced UI</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub  menu-two">
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../advanced/animation.html">
-                    <span class="site-menu-title">Animation</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../advanced/highlight.html">
-                    <span class="site-menu-title">Highlight</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../advanced/lightbox.html">
-                    <span class="site-menu-title">Lightbox</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../advanced/scrollable.html">
-                    <span class="site-menu-title">Scrollable</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../advanced/rating.html">
-                    <span class="site-menu-title">Rating</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../advanced/context-menu.html">
-                    <span class="site-menu-title">Context Menu</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../advanced/alertify.html">
-                    <span class="site-menu-title">Alertify</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../advanced/masonry.html">
-                    <span class="site-menu-title">Masonry</span>
-                  </a>
-                </li>
-               
-              </ul>
-            </li>
-            <li class="site-menu-item has-sub">
-              <a class="nav-option" href="javascript:void(0)">
-                <i class="site-menu-icon icon-nav wb-plugin" aria-hidden="true"></i>
-                <span class="site-menu-title nav-t">Structure</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub  menu-two">
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../structure/alerts.html">
-                    <span class="site-menu-title">Alerts</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../structure/ribbon.html">
-                    <span class="site-menu-title">Ribbon</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../structure/pricing-tables.html">
-                    <span class="site-menu-title">Pricing Tables</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../structure/overlay.html">
-                    <span class="site-menu-title">Overlay</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../structure/cover.html">
-                    <span class="site-menu-title">Cover</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../structure/timeline-simple.html">
-                    <span class="site-menu-title">Simple Timeline</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../structure/timeline.html">
-                    <span class="site-menu-title">Timeline</span>
-                  </a>
-                </li>
-               
-              </ul>
-            </li>
-            <li class="site-menu-item has-sub">
-              <a class="nav-option" href="javascript:void(0)">
-                <i class="site-menu-icon icon-nav wb-extension" aria-hidden="true"></i>
-                <span class="site-menu-title nav-t">Widgets</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub  menu-two">
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../widgets/statistics.html">
-                    <span class="site-menu-title">Statistics Widgets</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../widgets/data.html">
-                    <span class="site-menu-title">Data Widgets</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../widgets/blog.html">
-                    <span class="site-menu-title">Blog Widgets</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../widgets/chart.html">
-                    <span class="site-menu-title">Chart Widgets</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../widgets/social.html">
-                    <span class="site-menu-title">Social Widgets</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../widgets/weather.html">
-                    <span class="site-menu-title">Weather Widgets</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="site-menu-item has-sub">
-              <a class="nav-option" href="javascript:void(0)">
-                <i class="site-menu-icon icon-nav wb-library" aria-hidden="true"></i>
-                <span class="site-menu-title nav-t">Forms</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub  menu-two">
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../forms/general.html">
-                    <span class="site-menu-title">General Elements</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../forms/material.html">
-                    <span class="site-menu-title">Material Elements</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../forms/advanced.html">
-                    <span class="site-menu-title">Advanced Elements</span>
-                  </a>
-                </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../forms/layouts.html">
-                    <span class="site-menu-title">Form Layouts</span>
-                    <div class="site-menu-label">
-                      <span class="badge badge badge-warning badge-round">new</span>
+                <li class="site-menu-item menu-two">
+                  <a class="animsition-link" href="#">
+                    <div class="nav-subop-c">
+                      <i data-feather="arrow-right" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                      <span class="site-menu-title">Opción</span>
                     </div>
                   </a>
                 </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../forms/wizard.html">
-                    <span class="site-menu-title">Form Wizard</span>
+                <li class="site-menu-item menu-two">
+                  <a class="animsition-link" href="#">
+                    <div class="nav-subop-c">
+                      <i data-feather="arrow-right" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                      <span class="site-menu-title">Opción</span>
+                    </div>
+                  
                   </a>
                 </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../forms/validation.html">
-                    <span class="site-menu-title">Form Validation</span>
+              </ul>
+            </li>
+
+            <li class="site-menu-item has-sub">
+              <a class="nav-option" href="javascript:void(0)">
+               <div class="nav-op-c">
+                <i data-feather="briefcase" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                <span class="site-menu-title nav-t">Cierres</span>
+               </div>
+              </a>
+              <ul class="site-menu-sub  menu-two">
+                <li class="site-menu-item menu-two">
+                  <a class="animsition-link" href="#">
+                    <div class="nav-subop-c">
+                      <i data-feather="arrow-right" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                      <span class="site-menu-title">Opción</span>
+                    </div>
                   </a>
                 </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../forms/masks.html">
-                    <span class="site-menu-title">Form Masks</span>
+                <li class="site-menu-item menu-two">
+                  <a class="animsition-link" href="#">
+                    <div class="nav-subop-c">
+                      <i data-feather="arrow-right" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                      <span class="site-menu-title">Opción</span>
+                    </div>
                   </a>
                 </li>
-                <li class="site-menu-item  menu-two">
-                  <a class="animsition-link" href="../forms/file-uploads.html">
-                    <span class="site-menu-title">File Uploads</span>
+              </ul>
+            </li>
+
+            <li class="site-menu-item has-sub">
+              <a class="nav-option" href="javascript:void(0)">
+               <div class="nav-op-c">
+                <i data-feather="clock" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                <span class="site-menu-title nav-t">Históricos</span>
+               </div>
+              </a>
+              <ul class="site-menu-sub  menu-two">
+                <li class="site-menu-item menu-two">
+                  <a class="animsition-link" href="#">
+                    <div class="nav-subop-c">
+                      <i data-feather="arrow-right" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                      <span class="site-menu-title">Opción</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="site-menu-item menu-two">
+                  <a class="animsition-link" href="#">
+                    <div class="nav-subop-c">
+                      <i data-feather="arrow-right" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                      <span class="site-menu-title">Opción</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="site-menu-item has-sub">
+              <a class="nav-option" href="javascript:void(0)">
+               <div class="nav-op-c">
+                <i data-feather="settings" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                <span class="site-menu-title nav-t">Procesos</span>
+               </div>
+              </a>
+              <ul class="site-menu-sub  menu-two">
+                <li class="site-menu-item menu-two">
+                  <a class="animsition-link" href="#">
+                    <div class="nav-subop-c">
+                      <i data-feather="arrow-right" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                      <span class="site-menu-title">Opción</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="site-menu-item menu-two">
+                  <a class="animsition-link" href="#">
+                    <div class="nav-subop-c">
+                      <i data-feather="arrow-right" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                      <span class="site-menu-title">Opción</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="site-menu-item has-sub">
+              <a class="nav-option" href="javascript:void(0)">
+               <div class="nav-op-c">
+                <i data-feather="clipboard" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                <span class="site-menu-title nav-t">Reportes</span>
+               </div>
+              </a>
+              <ul class="site-menu-sub  menu-two">
+                <li class="site-menu-item menu-two">
+                  <a class="animsition-link" href="#">
+                    <div class="nav-subop-c">
+                      <i data-feather="arrow-right" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                      <span class="site-menu-title">Opción</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="site-menu-item menu-two">
+                  <a class="animsition-link" href="#">
+                    <div class="nav-subop-c">
+                      <i data-feather="arrow-right" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                      <span class="site-menu-title">Opción</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="site-menu-item has-sub">
+              <a class="nav-option" href="javascript:void(0)">
+               <div class="nav-op-c">
+                <i data-feather="clock" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                <span class="site-menu-title nav-t">Utilería</span>
+               </div>
+              </a>
+              <ul class="site-menu-sub  menu-two">
+                <li class="site-menu-item menu-two">
+                  <a class="animsition-link" href="#">
+                    <div class="nav-subop-c">
+                      <i data-feather="arrow-right" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                      <span class="site-menu-title">Opción</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="site-menu-item menu-two">
+                  <a class="animsition-link" href="#">
+                    <div class="nav-subop-c">
+                      <i data-feather="arrow-right" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                      <span class="site-menu-title">Opción</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="site-menu-item has-sub">
+              <a class="nav-option" href="javascript:void(0)">
+               <div class="nav-op-c">
+                <i data-feather="terminal" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                <span class="site-menu-title nav-t">Sistema</span>
+               </div>
+              </a>
+              <ul class="site-menu-sub  menu-two">
+                <li class="site-menu-item menu-two">
+                  <a class="animsition-link" href="#">
+                    <div class="nav-subop-c">
+                      <i data-feather="arrow-right" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                      <span class="site-menu-title">Opción</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="site-menu-item menu-two">
+                  <a class="animsition-link" href="#">
+                    <div class="nav-subop-c">
+                      <i data-feather="arrow-right" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+                      <span class="site-menu-title">Opción</span>
+                    </div>
                   </a>
                 </li>
               </ul>
             </li>
 
           </ul>
-
+          <div class="site-menubar-footer">
+            <a href="javascript: void(0);" class="fold-show" data-placement="top" data-toggle="tooltip" data-original-title="Cerrar sesión">
+              <i data-feather="log-out" class="site-menu-icon icon-nav" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -1152,6 +1082,8 @@
         href="https://themeforest.net/user/creation-studio">Creation Studio</a>
     </div>
   </footer>
+
+  
   <!-- Core  -->
   <script src="../../../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
   <script src="../../../global/vendor/jquery/jquery.js"></script>
@@ -1205,7 +1137,7 @@
         nav_op[i].classList.add("border-nav-top")
       }
     }) */
-
+    feather.replace()
   </script>
 </body>
 
