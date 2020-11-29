@@ -31,12 +31,15 @@
   <link rel="stylesheet" href="../../assets/examples/css/dashboard/analytics.css">
 
   <!-- Fonts -->
+  <link rel="stylesheet" href="../../../global/fonts/material-design/material-design.min.css">
   <link rel="stylesheet" href="../../../global/fonts/web-icons/web-icons.min.css">
   <link rel="stylesheet" href="../../../global/fonts/brand-icons/brand-icons.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
   <!--[if lt IE 9]>
       <script src="../../../global/vendor/html5shiv/html5shiv.min.js"></script>
       <![endif]-->
@@ -92,18 +95,24 @@
                   </i>
                 </a>
               </li> -->
-            <li class="nav-item hidden-sm-down" id="toggleFullscreen">
+          <!--   <li class="nav-item hidden-sm-down" id="toggleFullscreen">
               <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
                 <span class="sr-only">Toggle fullscreen</span>
               </a>
-            </li>
+            </li> -->
             <li class="nav-item hidden-float">
-              <a class="nav-link icon wb-search" data-toggle="collapse" href="#" data-target="#site-navbar-search"
-                role="button">
-                <span class="sr-only">Toggle Search</span>
-              </a>
+              <div class="collapse navbar-search navbar-left" id="example-navbar-search">
+                <form class="navbar-form" role="search">
+                  <div class="input-search">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <button type="button" class="input-search-btn">
+                      <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                  </div>
+                </form>
+              </div>
             </li>
-            <li class="nav-item dropdown dropdown-fw dropdown-mega">
+          <!--   <li class="nav-item dropdown dropdown-fw dropdown-mega">
               <a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="fade"
                 role="button">Mega <i class="icon wb-chevron-down-mini" aria-hidden="true"></i></a>
               <div class="dropdown-menu" role="menu">
@@ -197,7 +206,7 @@
                     </div>
                     <div class="col-md-4">
                       <h5 class="mb-0">Accordion</h5>
-                      <!-- Accordion -->
+                    
                       <div class="panel-group panel-group-simple" id="siteMegaAccordion" aria-multiselectable="true"
                         role="tablist">
                         <div class="panel">
@@ -251,49 +260,33 @@
                           </div>
                         </div>
                       </div>
-                      <!-- End Accordion -->
+                    >
                     </div>
                   </div>
                 </div>
               </div>
-            </li>
+            </li> -->
           </ul>
           <!-- End Navbar Toolbar -->
   
           <!-- Navbar Toolbar Right -->
           <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
-            <li class="nav-item dropdown">
-              <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" data-animation="scale-up"
-                aria-expanded="false" role="button">
-                <span class="flag-icon flag-icon-us"></span>
-              </a>
-              <div class="dropdown-menu" role="menu">
-                <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
-                  <span class="flag-icon flag-icon-gb"></span> English</a>
-                <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
-                  <span class="flag-icon flag-icon-fr"></span> French</a>
-                <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
-                  <span class="flag-icon flag-icon-cn"></span> Chinese</a>
-                <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
-                  <span class="flag-icon flag-icon-de"></span> German</a>
-                <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
-                  <span class="flag-icon flag-icon-nl"></span> Dutch</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
+           
+            <li class="nav-item dropdown avatar-name">
+              <p class="nav-text my-auto mr-2">Bienvendio! Chris Peterson</p>
               <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false"
                 data-animation="scale-up" role="button">
                 <span class="avatar avatar-online">
                   <img src="../../../global/portraits/5.jpg" alt="...">
-                  <i></i>
                 </span>
+                <ion-icon name="chevron-down-outline" class="icon-avatar"></ion-icon>
               </a>
               <div class="dropdown-menu" role="menu">
-                <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><ion-icon name="person-outline" class="icon"></ion-icon>Profile</a>
-                <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><ion-icon name="card-outline" class="icon"></ion-icon>Billing</a>
-                <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><ion-icon name="settings-outline" class="icon"></ion-icon> Settings</a>
+                <a class="dropdown-item bold" href="javascript:void(0)" role="menuitem"><ion-icon name="person-outline" class="icon"></ion-icon>Profile</a>
+                <a class="dropdown-item bold" href="javascript:void(0)" role="menuitem"><ion-icon name="card-outline" class="icon"></ion-icon>Billing</a>
+                <a class="dropdown-item bold" href="javascript:void(0)" role="menuitem"><ion-icon name="settings-outline" class="icon"></ion-icon> Settings</a>
                 <div class="dropdown-divider" role="presentation"></div>
-                <a class="dropdown-item" href="javascript:void(0)" role="menuitem"> <ion-icon name="log-out-outline" class="icon"></ion-icon>Logout</a>
+                <a class="dropdown-item bold" href="javascript:void(0)" role="menuitem"> <ion-icon name="log-out-outline" class="icon"></ion-icon>Logout</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -314,7 +307,7 @@
                       <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
                         <div class="media">
                           <div class="pr-10">
-                            <i class="icon wb-order bg-red-600 white icon-circle" aria-hidden="true"></i>
+                            <i class="icon md-receipt bg-red-600 white icon-circle" aria-hidden="true"></i>
                           </div>
                           <div class="media-body">
                             <h6 class="media-heading">A new order has been placed</h6>
@@ -379,108 +372,6 @@
                 </div>
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" title="Messages" aria-expanded="false"
-                data-animation="scale-up" role="button">
-                <i class="icon wb-envelope" aria-hidden="true"></i>
-                <span class="badge badge-pill badge-info up">3</span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right dropdown-menu-media" role="menu">
-                <div class="dropdown-menu-header" role="presentation">
-                  <h5>MESSAGES</h5>
-                  <span class="badge badge-round badge-info">New 3</span>
-                </div>
-  
-                <div class="list-group" role="presentation">
-                  <div data-role="container">
-                    <div data-role="content">
-                      <a class="list-group-item" href="javascript:void(0)" role="menuitem">
-                        <div class="media">
-                          <div class="pr-10">
-                            <span class="avatar avatar-sm avatar-online">
-                              <img src="../../../global/portraits/2.jpg" alt="..." />
-                              <i></i>
-                            </span>
-                          </div>
-                          <div class="media-body">
-                            <h6 class="media-heading">Mary Adams</h6>
-                            <div class="media-meta">
-                              <time datetime="2018-06-17T20:22:05+08:00">30 minutes ago</time>
-                            </div>
-                            <div class="media-detail">Anyways, i would like just do it</div>
-                          </div>
-                        </div>
-                      </a>
-                      <a class="list-group-item" href="javascript:void(0)" role="menuitem">
-                        <div class="media">
-                          <div class="pr-10">
-                            <span class="avatar avatar-sm avatar-off">
-                              <img src="../../../global/portraits/3.jpg" alt="..." />
-                              <i></i>
-                            </span>
-                          </div>
-                          <div class="media-body">
-                            <h6 class="media-heading">Caleb Richards</h6>
-                            <div class="media-meta">
-                              <time datetime="2018-06-17T12:30:30+08:00">12 hours ago</time>
-                            </div>
-                            <div class="media-detail">I checheck the document. But there seems</div>
-                          </div>
-                        </div>
-                      </a>
-                      <a class="list-group-item" href="javascript:void(0)" role="menuitem">
-                        <div class="media">
-                          <div class="pr-10">
-                            <span class="avatar avatar-sm avatar-busy">
-                              <img src="../../../global/portraits/4.jpg" alt="..." />
-                              <i></i>
-                            </span>
-                          </div>
-                          <div class="media-body">
-                            <h6 class="media-heading">June Lane</h6>
-                            <div class="media-meta">
-                              <time datetime="2018-06-16T18:38:40+08:00">2 days ago</time>
-                            </div>
-                            <div class="media-detail">Lorem ipsum Id consectetur et minim</div>
-                          </div>
-                        </div>
-                      </a>
-                      <a class="list-group-item" href="javascript:void(0)" role="menuitem">
-                        <div class="media">
-                          <div class="pr-10">
-                            <span class="avatar avatar-sm avatar-away">
-                              <img src="../../../global/portraits/5.jpg" alt="..." />
-                              <i></i>
-                            </span>
-                          </div>
-                          <div class="media-body">
-                            <h6 class="media-heading">Edward Fletcher</h6>
-                            <div class="media-meta">
-                              <time datetime="2018-06-15T20:34:48+08:00">3 days ago</time>
-                            </div>
-                            <div class="media-detail">Dolor et irure cupidatat commodo nostrud nostrud.</div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="dropdown-menu-footer" role="presentation">
-                  <a class="dropdown-menu-footer-btn" href="javascript:void(0)" role="button">
-                    <i class="icon wb-settings" aria-hidden="true"></i>
-                  </a>
-                  <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
-                    See all messages
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item" id="toggleChat">
-              <a class="nav-link" data-toggle="site-sidebar" href="javascript:void(0)" title="Chat"
-                data-url="../site-sidebar.tpl">
-                <i class="icon wb-chat" aria-hidden="true"></i>
-              </a>
-            </li>
           </ul>
           <!-- End Navbar Toolbar Right -->
         </div>
@@ -503,7 +394,7 @@
       </div>
     </nav>
     <div class="site-menubar">
-      <div class="site-menubar-body scrollable scrollable-inverse scrollable-vertical is-disabled">
+      <div class="site-menubar-body scrollable scrollable-inverse scrollable-vertical is-disabled" id="site-mb">
         <div>
           <div>
             <ul class="site-menu" data-plugin="menu">
@@ -526,7 +417,7 @@
                     <a class="animsition-link" href="#">
                       <div class="nav-subop-c">
                         <ion-icon name="arrow-redo-outline" class="site-menu-icon icon-nav"></ion-icon>
-                        <span class="site-menu-title">Opción</span>
+                        <span class="site-menu-title bold">Opción</span>
                       </div>
   
                     </a>
@@ -535,7 +426,7 @@
                     <a class="animsition-link" href="#">
                       <div class="nav-subop-c">
                         <ion-icon name="arrow-redo-outline" class="site-menu-icon icon-nav"></ion-icon>
-                        <span class="site-menu-title">Opción</span>
+                        <span class="site-menu-title bold">Opción</span>
                       </div>
   
                     </a>
@@ -555,7 +446,7 @@
                     <a class="animsition-link" href="#">
                       <div class="nav-subop-c">
                         <ion-icon name="arrow-redo-outline" class="site-menu-icon icon-nav"></ion-icon>
-                        <span class="site-menu-title">Opción</span>
+                        <span class="site-menu-title bold">Opción</span>
                       </div>
                     </a>
                   </li>
@@ -563,7 +454,7 @@
                     <a class="animsition-link" href="#">
                       <div class="nav-subop-c">
                         <ion-icon name="arrow-redo-outline" class="site-menu-icon icon-nav"></ion-icon>
-                        <span class="site-menu-title">Opción</span>
+                        <span class="site-menu-title bold">Opción</span>
                       </div>
   
                     </a>
@@ -583,7 +474,7 @@
                     <a class="animsition-link" href="#">
                       <div class="nav-subop-c">
                         <ion-icon name="arrow-redo-outline" class="site-menu-icon icon-nav"></ion-icon>
-                        <span class="site-menu-title">Opción</span>
+                        <span class="site-menu-title bold">Opción</span>
                       </div>
                     </a>
                   </li>
@@ -591,7 +482,7 @@
                     <a class="animsition-link" href="#">
                       <div class="nav-subop-c">
                         <ion-icon name="arrow-redo-outline" class="site-menu-icon icon-nav"></ion-icon>
-                        <span class="site-menu-title">Opción</span>
+                        <span class="site-menu-title bold">Opción</span>
                       </div>
                     </a>
                   </li>
@@ -610,7 +501,7 @@
                     <a class="animsition-link" href="#">
                       <div class="nav-subop-c">
                         <ion-icon name="arrow-redo-outline" class="site-menu-icon icon-nav"></ion-icon>
-                        <span class="site-menu-title">Opción</span>
+                        <span class="site-menu-title bold">Opción</span>
                       </div>
                     </a>
                   </li>
@@ -618,7 +509,7 @@
                     <a class="animsition-link" href="#">
                       <div class="nav-subop-c">
                         <ion-icon name="arrow-redo-outline" class="site-menu-icon icon-nav"></ion-icon>
-                        <span class="site-menu-title">Opción</span>
+                        <span class="site-menu-title bold">Opción</span>
                       </div>
                     </a>
                   </li>
@@ -637,7 +528,7 @@
                     <a class="animsition-link" href="#">
                       <div class="nav-subop-c">
                         <ion-icon name="arrow-redo-outline" class="site-menu-icon icon-nav"></ion-icon>
-                        <span class="site-menu-title">Opción</span>
+                        <span class="site-menu-title bold">Opción</span>
                       </div>
                     </a>
                   </li>
@@ -645,7 +536,7 @@
                     <a class="animsition-link" href="#">
                       <div class="nav-subop-c">
                         <ion-icon name="arrow-redo-outline" class="site-menu-icon icon-nav"></ion-icon>
-                        <span class="site-menu-title">Opción</span>
+                        <span class="site-menu-title bold">Opción</span>
                       </div>
                     </a>
                   </li>
@@ -664,7 +555,7 @@
                     <a class="animsition-link" href="#">
                       <div class="nav-subop-c">
                         <ion-icon name="arrow-redo-outline" class="site-menu-icon icon-nav"></ion-icon>
-                        <span class="site-menu-title">Opción</span>
+                        <span class="site-menu-title bold">Opción</span>
                       </div>
                     </a>
                   </li>
@@ -672,7 +563,7 @@
                     <a class="animsition-link" href="#">
                       <div class="nav-subop-c">
                         <ion-icon name="arrow-redo-outline" class="site-menu-icon icon-nav"></ion-icon>
-                        <span class="site-menu-title">Opción</span>
+                        <span class="site-menu-title bold">Opción</span>
                       </div>
                     </a>
                   </li>
@@ -691,7 +582,7 @@
                     <a class="animsition-link" href="#">
                       <div class="nav-subop-c">
                         <ion-icon name="arrow-redo-outline" class="site-menu-icon icon-nav"></ion-icon>
-                        <span class="site-menu-title">Opción</span>
+                        <span class="site-menu-title bold">Opción</span>
                       </div>
                     </a>
                   </li>
@@ -699,7 +590,7 @@
                     <a class="animsition-link" href="#">
                       <div class="nav-subop-c">
                         <ion-icon name="arrow-redo-outline" class="site-menu-icon icon-nav"></ion-icon>
-                        <span class="site-menu-title">Opción</span>
+                        <span class="site-menu-title bold">Opción</span>
                       </div>
                     </a>
                   </li>
@@ -718,7 +609,7 @@
                     <a class="animsition-link" href="#">
                       <div class="nav-subop-c">
                         <ion-icon name="arrow-redo-outline" class="site-menu-icon icon-nav"></ion-icon>
-                        <span class="site-menu-title">Opción</span>
+                        <span class="site-menu-title bold">Opción</span>
                       </div>
                     </a>
                   </li>
@@ -726,7 +617,7 @@
                     <a class="animsition-link" href="#">
                       <div class="nav-subop-c">
                         <ion-icon name="arrow-redo-outline" class="site-menu-icon icon-nav"></ion-icon>
-                        <span class="site-menu-title">Opción</span>
+                        <span class="site-menu-title bold">Opción</span>
                       </div>
                     </a>
                   </li>
@@ -1132,14 +1023,24 @@
   <script src="../../../global/js/Plugin/matchheight.js"></script>
 
   <script src="../../assets/examples/js/dashboard/analytics.js"></script>
-  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
   <script>
-    feather.replace()
-   /*  var scrollablec = document.getElementsByClassName("scrollable-container")
-    scrollablec.setAttribute("style", "width:90px !important"); */
-
-
+    let smb = document.getElementById("site-mb")
+    var x = window.matchMedia("(min-width: 769px)")
+    window.onresize = function myFunction(x) {
+  if (x.matches &&  smb.classList.contains("is-enable")) { // If media query matches
+   smb.classList.remove("is-enabled");
+   smb.classList.add("is-disabled")
+  }
+};
+function myFunction(x) {
+  if (x.matches &&  smb.classList.contains("is-enable")) { // If media query matches
+   smb.classList.remove("is-enabled");
+   smb.classList.add("is-disabled")
+  }
+}
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
   </script>
 </body>
 
