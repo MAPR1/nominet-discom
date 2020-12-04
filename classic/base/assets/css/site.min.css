@@ -1365,6 +1365,9 @@ body.site-gridmenu-active {
   overflow-y: auto;
   visibility: hidden;
   background: #242f35;
+  box-shadow: 1px 1px 4px 0px rgba(0,0,0,.45);
+  -webkit-box-shadow-:1px 1px 4px 0px rgba(0,0,0,.45);
+  -moz-box-shadow-:1px 1px 4px 0px rgba(0,0,0,.45);
   opacity: 0;
   transition: visibility 0.25s, opacity 0.25s;
 }
@@ -10491,10 +10494,15 @@ background-color:#ff965e !important;
 color: #ffffff;
 }
 .site-menu-item.menu-two.hover .nav-subop-c ion-icon{
-  color: white !important;
+  color: white ;
 }
  .site-menu-item.menu-two.menu-three.hover .nav-subop-c {
 background-color:white !important;
+color: #ff965e;
+}
+ .site-menu-item.menu-two.menu-three.hover .nav-subop-c ion-icon {
+
+color: #ff965e;
 }
 
 .nav-subop-c{
@@ -10654,8 +10662,41 @@ a.list-group-item:hover .media .media-body .media-heading, a.list-group-item:hov
   }
    .site-menu-item.menu-two.three.hover a.sub-three-label {
   background-color:#ff965e !important;
+  color: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: .5s;
+  }
+   .site-menu-item.menu-two.three.hover a.sub-three-label ion-icon {
+ 
+  color: white !important;
   }
    .site-menu-item.menu-two.three .menu-three .nav-subop-c:hover {
   background-color:#ff965e !important;
+  color: white;
   }
 
+  .site-menu-item.menu-two.three .menu-three .nav-subop-c:hover ion-icon {
+   
+    color: white !important;
+}
+
+/* .site-menu-item.menu-two.hover .nav-subop-c ion-icon {
+  
+  color: #ffffff !important;
+} */
+
+
+.border-drop::before{
+  content : "";
+  position: absolute;
+  left    : 12%;
+  bottom  : 0;
+  height  : 1px;
+  width   : 72%;  /* or 100px */
+  border-bottom:1px solid #bcbcbc;
+}
+/* .border-drop{
+  border-bottom: .5px solid red;
+
+} */
