@@ -10712,3 +10712,10 @@ a.list-group-item:hover .media .media-body .media-heading, a.list-group-item:hov
   border-bottom: .5px solid red;
 
 } */
+
+hr {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  border: 0;
+  border-top: 1px solid #e4eaec;
+}
