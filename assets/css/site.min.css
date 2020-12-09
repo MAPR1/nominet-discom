@@ -1269,7 +1269,7 @@ body.site-gridmenu-active {
   }
   .site-menubar-fold .site-menu > .site-menu-item > a {
       height: 90px;
-      line-height: 85px;
+      line-height: 70px;
       padding-left:8px;
   }
   .site-menubar-fold .site-menu > .site-menu-item > a .site-menu-icon,
@@ -10448,7 +10448,7 @@ h3.example-title {
 }
 .site-menu-item.has-sub.hover .nav-op-c{
   background: white;
-  height: 90px;
+  height: 80px;
   min-width: 80px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -10462,7 +10462,7 @@ li.site-menu-item.has-sub.hover + li.site-menu-item.has-sub {
 li.site-menu-item.has-sub.hover + li.site-menu-item.has-sub:after {
     position: absolute;
     content: url("../images/path-4.svg");
-    top: -2px;
+    top: -12px;
     right: 0;
     bottom: 0;
     left: 64px;
@@ -10550,7 +10550,8 @@ color: #000000;
     }
 
     .scrollable-container {
-        background: transparent !important;
+      background: rgb(201,62,4);
+      background: linear-gradient(90deg, rgba(201,62,4,1) 13.9%, rgba(255,255,255,0) 13.9%);
         width: 100% !important;
     }
 
@@ -10586,7 +10587,6 @@ color: #000000;
 
 .dropdown-item:focus, .dropdown-item:hover {
   color: #ffffff;
-  font-weight: bold;
     background-color: #ff965e;
     display: flex !important;
     justify-content: flex-start;
@@ -10677,7 +10677,7 @@ a.list-group-item:hover .media .media-body .media-heading, a.list-group-item:hov
   color: white;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  transition: .5s;
+  /* transition: .5s; */
   }
    .site-menu-item.menu-two.three.hover a.sub-three-label ion-icon {
  
