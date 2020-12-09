@@ -252,6 +252,7 @@ body {
 .site-menu .site-menu-sub .site-menu-item.has-sub {
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
+  width: 100% !important;
 }
 .site-menu .site-menu-sub .site-menu-item > a {
   padding: 0 30px;
@@ -1374,7 +1375,7 @@ body.site-gridmenu-active {
 }
 .site-menubar-fold .site-menu > .site-menu-item > .site-menu-sub-up {
   top: auto;
-  bottom: 0;
+    bottom: -35px;
 }
 .site-menubar-fold
   .site-menu
