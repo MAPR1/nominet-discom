@@ -10520,8 +10520,8 @@ color: #ff965e;
 .nav-subop-c{
   padding-left: 10px;
    
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
    /*  transition: .5s; */
 }
 .nav-subtitle{
@@ -10675,8 +10675,8 @@ a.list-group-item:hover .media .media-body .media-heading, a.list-group-item:hov
    .site-menu-item.menu-two.three.hover a.sub-three-label {
   background-color:#ff965e !important;
   color: white;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
   /* transition: .5s; */
   }
    .site-menu-item.menu-two.three.hover a.sub-three-label ion-icon {
@@ -10718,4 +10718,8 @@ hr {
   margin-bottom: 0rem;
   border: 0;
   border-top: 1px solid #e4eaec;
+}
+
+.site-menu-item.menu-two.hover .nav-subop-c ion-icon.sub-icon {
+  color: #ffffff !important;
 }
