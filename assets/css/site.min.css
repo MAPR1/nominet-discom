@@ -211,7 +211,7 @@ body {
   padding: 0;
 }
 .site-menu > .site-menu-item.open {
-  background: #242f35;
+  background: #c93e04;
 }
 .site-menu > .site-menu-item.open > a {
   color: #fff;
@@ -226,7 +226,7 @@ body {
   background-color: rgba(255, 255, 255, 0.02);
 }
 .site-menu > .site-menu-item.active {
-  background: #242f35;
+  background: #c93e04;
   border-top: 1px solid rgba(0, 0, 0, 0.04);
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
@@ -258,6 +258,7 @@ body {
 }
 .site-menu .site-menu-sub .site-menu-item.open {
   background: rgba(0, 0, 0, 0.06);
+  width: 100% !important;
 }
 .site-menu .site-menu-sub .site-menu-item.open > a {
   color: #fff;
@@ -1364,10 +1365,10 @@ body.site-gridmenu-active {
   width: 240px;
   overflow-y: auto;
   visibility: hidden;
-  background: #242f35;
-  box-shadow: 1px 1px 4px 0px rgba(0,0,0,.45);
-  -webkit-box-shadow-:1px 1px 4px 0px rgba(0,0,0,.45);
-  -moz-box-shadow-:1px 1px 4px 0px rgba(0,0,0,.45);
+  background: #c93e04;
+  box-shadow: 25px 0px 25px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow-:25px 0px 25px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow-:25px 0px 25px rgba(0, 0, 0, 0.3);
   opacity: 0;
   transition: visibility 0.25s, opacity 0.25s;
 }
@@ -1411,8 +1412,8 @@ body.site-gridmenu-active {
 .site-menubar-fold .site-menubar-section {
   padding: 30px;
   margin-top: 0;
-  border-top: 2px solid #242f35;
-  border-bottom: 2px solid #242f35;
+  border-top: 2px solid #c93e04;
+  border-bottom: 2px solid #c93e04;
 }
 .site-menubar-fold .site-menubar-section > h4,
 .site-menubar-fold .site-menubar-section > h5 {
@@ -1496,7 +1497,7 @@ body.site-gridmenu-active {
     font: "0/0" a;
     color: transparent;
     text-shadow: none;
-    background: #242f35;
+    background: #c93e04;
   }
   .css-menubar .site-menu-category:first-child {
     visibility: hidden;
@@ -1597,7 +1598,7 @@ body.site-gridmenu-active {
     width: 240px;
     overflow-y: auto;
     visibility: hidden;
-    background: #242f35;
+    background: #c93e04;
     opacity: 0;
     transition: visibility 0.25s, opacity 0.25s;
   }
@@ -1637,8 +1638,8 @@ body.site-gridmenu-active {
   .css-menubar .site-menubar-section {
     padding: 30px;
     margin-top: 0;
-    border-top: 2px solid #242f35;
-    border-bottom: 2px solid #242f35;
+    border-top: 2px solid #c93e04;
+    border-bottom: 2px solid #c93e04;
   }
   .css-menubar .site-menubar-section > h4,
   .css-menubar .site-menubar-section > h5 {
@@ -10476,7 +10477,7 @@ li.site-menu-item.has-sub.hover + li.site-menu-item.has-sub {
     width: 90px !important;
 }
 .site-menu{
-    background-color: #ffffff;
+    background-color: #c93e04;
 }
 
 .border-nav-top{
