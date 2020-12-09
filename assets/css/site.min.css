@@ -10451,15 +10451,25 @@ h3.example-title {
   min-width: 80px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  transition: 0.5s;
+ /*  transition: 0.5s; */
 }
 
 li.site-menu-item.has-sub.hover + li.site-menu-item.has-sub {
     border-top-right-radius: 20px; 
+    position: relative;
+}
+li.site-menu-item.has-sub.hover + li.site-menu-item.has-sub:after {
+    position: absolute;
+    content: url("../images/path-4.svg");
+    top: -2px;
+    right: 0;
+    bottom: 0;
+    left: 64px;
+    
 }
 
 .site-menu-item.has-sub.hover a.nav-option ~ a.nav-option{
-   transition: .5s;
+  /*  transition: .5s; */
     border-top-left-radius: 20px;
 }
 .site-menu-item.has-sub.hover .icon-nav, .site-menu-item.has-sub.hover .nav-t{
@@ -10511,7 +10521,7 @@ color: #ff965e;
    
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    transition: .5s;
+   /*  transition: .5s; */
 }
 .nav-subtitle{
   line-height: 35px !important;
