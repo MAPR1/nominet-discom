@@ -10723,3 +10723,7 @@ hr {
 .site-menu-item.menu-two.hover .nav-subop-c ion-icon.sub-icon {
   color: #ffffff !important;
 }
+
+.site-menubar-fold .site-menu > .site-menu-item > .site-menu-sub .site-menu-item.menu-three > a.drop-item {
+  padding: 0 0 0 35px;
+}
